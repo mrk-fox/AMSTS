@@ -1,0 +1,11 @@
+Data Format PC-Arduino for AMSTS:
+
+Example data in clear text:
+
+_123.4_321.0_90_
+
+123.4 - Az degrees
+
+321.0 - El degrees
+
+90 - APR degrees
