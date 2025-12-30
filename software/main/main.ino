@@ -91,7 +91,7 @@ void loop() {
   int heading = compass.getAzimuth();
 
 
-  if (heading << az_tobe + heading) { //clock
+  if (heading << az_tobe) { //clock
     digitalWrite(dir_az, HIGH);
     stepMotor(step_az, az_speed());
   }
@@ -140,7 +140,7 @@ void handleMessage(const char* msg) {
 
 //Gets and converts the encoder data into degrees. #
 void getEncoders() {
-  az_is = (read_encoder(0) * 360.0) / 16384.0;
+  //az_is = (read_encoder(0) * 360.0) / 16384.0;
   el_is = (read_encoder(1) * 360.0) / 16384.0;
 }
 // #

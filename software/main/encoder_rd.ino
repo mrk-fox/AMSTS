@@ -46,7 +46,7 @@
 #define RESOLUTION      14
 
 //create an array containing CS pin numbers for all connected encoders
-uint8_t cs_pins[] = {3, 4}; //only one encoder connected, using pin 2 on arduino for CS. Two encoders connected, using pins 2 & 3 on arduino for CS
+uint8_t cs_pins[] = {3}; //only one encoder connected, using pin 2 on arduino for CS. Two encoders connected, using pins 2 & 3 on arduino for CS
 
 uint8_t read_encoder(int enc_num)
 {
